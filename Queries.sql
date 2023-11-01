@@ -33,3 +33,11 @@ If two or more students both have names ending in the same last three characters
 SELECT name FROM STUDENTS
 WHERE Marks > 75
 ORDER BY LOWER(RIGHT(name,3)), id;
+
+/*
+Write a query that prints a list of employee names (i.e.: the name attribute) 
+from the Employee table in alphabetical order.
+*/
+
+SELECT name FROM Employee
+ORDER BY name;
