@@ -50,3 +50,12 @@ Sort your result by ascending employee_id.
 
 SELECT name FROM Employee
 WHERE salary > 2000 AND months < 10;
+
+/*
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and 
+their respective average city populations (CITY.Population) rounded down to the nearest integer.
+*/
+
+SELECT country.continent, FLOOR(AVG(city.population)) FROM 
+country INNER JOIN city ON city.countrycode=country.code
+GROUP BY country.continent;
