@@ -108,3 +108,12 @@ to the next integer.
 */
 
 SELECT CEIL((AVG(salary)) - (AVG(REPLACE(salary, '0', '')))) AS avg_salary FROM employees;
+
+/*
+Given the CITY and COUNTRY tables, query the sum of the populations of all cities 
+where the CONTINENT is 'Asia'.
+*/
+
+SELECT SUM(CITY.population) FROM city
+JOIN Country ON CITY.CountryCode = COUNTRY.Code
+WHERE COUNTRY.CONTINENT = 'Asia';
