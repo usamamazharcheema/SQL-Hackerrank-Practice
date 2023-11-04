@@ -1,2 +1,2 @@
-In this repository, I am showing the solution of Hackerrank problem tasks in SQL language.
+In this repository, I have solved the Hackerrank problems (Basic, Intermediate) in SQL language to upskill in SQL.
 
